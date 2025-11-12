@@ -1,12 +1,13 @@
 {
   "gate": "P0",
   "status": "DRAFT",
-  "submitted_at": null,
+  "submitted_at": "2025-11-12T12:30:53+01:00",
   "approvals": {
     "gpt5": null,
     "gemini": null
   },
   "hash": null,
-  "notes": "Freeze after SUBMITTED; proceed only with double approval."
+  "notes": "Freeze after SUBMITTED; proceed only with double approval.",
+  "state": "SUBMITTED",
+  "submitted_by": "itmxvlpforaio01"
 }
-
