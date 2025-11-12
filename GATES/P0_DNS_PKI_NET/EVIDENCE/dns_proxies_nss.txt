@@ -1,0 +1,28 @@
+=== PROXIES NSS ===
+--- itmxvlpforaio01.it.cobra.group ---
+192.168.8.130   itmxvlpforaio01.it.cobra.group itmxvlpforaio01
+192.168.8.130   itmxvlpforaio01.it.cobra.group itmxvlpforaio01
+--- itmxvlpforprxd01.it.cobra.group ---
+192.168.8.132   itmxvlpforprxd01.it.cobra.group itmxvlpforprxd01
+192.168.8.132   itmxvlpforprxd01.it.cobra.group itmxvlpforprxd01
+--- itmxvlpforprxi01.vfintgr.local ---
+10.88.88.220    itmxvlpforprxi01.vfintgr.local itmxvlpforprxi01
+10.88.88.220    itmxvlpforprxi01.vfintgr.local itmxvlpforprxi01
+--- itmxvlpforprxt01.it.cobra.group ---
+192.168.8.133   itmxvlpforprxt01.it.cobra.group itmxvlpforprxt01
+192.168.8.133   itmxvlpforprxt01.it.cobra.group itmxvlpforprxt01
+--- itmxvlpforprxo01.it.cobra.group ---
+192.168.8.135   itmxvlpforprxo01.it.cobra.group itmxvlpforprxo01
+192.168.8.135   itmxvlpforprxo01.it.cobra.group itmxvlpforprxo01
+--- itva01vlpfpxsmgt01.intra.cobra.it ---
+10.50.2.100     itva01vlpfpxsmgt01.intra.cobra.it itva01vlpfpxsmgt01
+10.50.2.100     itva01vlpfpxsmgt01.intra.cobra.it itva01vlpfpxsmgt01
+--- itva01vlpfpxptwh01.intra.cobra.it ---
+10.99.103.201   itva01vlpfpxptwh01.intra.cobra.it itva01vlpfpxptwh01
+10.99.103.201   itva01vlpfpxptwh01.intra.cobra.it itva01vlpfpxptwh01
+--- itpsvlpforprx01.vfadc.local ---
+10.171.12.31    itpsvlpforprx01 itpsvlpforprx01.vfadc.local itpsvlpforprx01 itpsvlpforprx01.vfadc.local
+10.171.12.31    itpsvlpforprx01 itpsvlpforprx01.vfadc.local itpsvlpforprx01 itpsvlpforprx01.vfadc.local
+10.171.12.31    itpsvlpforprx01 itpsvlpforprx01.vfadc.local
+--- itva01vlpfpxbrwn01.vfabrown.local ---
+NSS-NO-FWD itva01vlpfpxbrwn01.vfabrown.local

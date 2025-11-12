@@ -1,0 +1,79 @@
+=== REACHABILITY Foreman->Proxies ===
+--- itmxvlpforaio01.it.cobra.group ---
+OPEN 9090
+CLOSED 5647
+OPEN 443
+CLOSED 8443
+OPEN 8140
+--- itmxvlpforprxd01.it.cobra.group ---
+OPEN 9090
+CLOSED 5647
+OPEN 443
+CLOSED 8443
+OPEN 8140
+--- itmxvlpforprxi01.vfintgr.local ---
+OPEN 9090
+CLOSED 5647
+OPEN 443
+CLOSED 8443
+OPEN 8140
+--- itmxvlpforprxt01.it.cobra.group ---
+OPEN 9090
+CLOSED 5647
+OPEN 443
+CLOSED 8443
+OPEN 8140
+--- itmxvlpforprxo01.it.cobra.group ---
+OPEN 9090
+CLOSED 5647
+OPEN 443
+CLOSED 8443
+OPEN 8140
+--- itva01vlpfpxsmgt01.intra.cobra.it ---
+OPEN 9090
+CLOSED 5647
+OPEN 443
+CLOSED 8443
+OPEN 8140
+--- itva01vlpfpxptwh01.intra.cobra.it ---
+OPEN 9090
+CLOSED 5647
+OPEN 443
+CLOSED 8443
+OPEN 8140
+--- itpsvlpforprx01.vfadc.local ---
+OPEN 9090
+CLOSED 5647
+OPEN 443
+CLOSED 8443
+OPEN 8140
+--- itva01vlpfpxbrwn01.vfabrown.local ---
+CLOSED 9090
+CLOSED 5647
+CLOSED 443
+CLOSED 8443
+CLOSED 8140
+--- itva01vlpfpxprdm01.intra.cobra.it ---
+OPEN 9090
+CLOSED 5647
+OPEN 443
+CLOSED 8443
+OPEN 8140
+--- itva01vlpfpxdte01.intra.cobra.it ---
+OPEN 9090
+CLOSED 5647
+OPEN 443
+CLOSED 8443
+OPEN 8140
+--- itmxvlpforprxp02.it.cobra.group ---
+OPEN 9090
+CLOSED 5647
+OPEN 443
+CLOSED 8443
+OPEN 8140
+--- esmadvlpforprx01.it.cobra.group ---
+OPEN 9090
+CLOSED 5647
+OPEN 443
+CLOSED 8443
+CLOSED 8140

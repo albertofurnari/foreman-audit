@@ -1,0 +1,43 @@
+gate: P0
+scope: [DNS, PKI, CONNECTIVITY]
+
+context:
+  console_fqdn: itmxvlpforaio01.it.cobra.group
+  console_ip: 192.168.8.130
+  proxies_examined:
+    - itmxvlpforaio01.it.cobra.group
+    - itmxvlpforprxd01.it.cobra.group
+    - itmxvlpforprxi01.vfintgr.local
+    - itmxvlpforprxt01.it.cobra.group
+    - itmxvlpforprxo01.it.cobra.group
+    - itva01vlpfpxsmgt01.intra.cobra.it
+    - itva01vlpfpxptwh01.intra.cobra.it
+    - itpsvlpforprx01.vfadc.local
+    - itva01vlpfpxprdm01.intra.cobra.it
+    - itva01vlpfpxdte01.intra.cobra.it
+    - itmxvlpforprxp02.it.cobra.group
+    - esmadvlpforprx01.it.cobra.group
+  proxies_excluded:
+    - itva01vlpfpxbrwn01.vfabrown.local   # planned decommission
+
+assertions:
+  dns_forward_reverse_consistent: false     # finché non sistemi A+PTR sugli altri host
+  pki_common_issuer: "C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group"
+  pki_expiry_days_min: 4450
+  connectivity_ok: false                    # diventerà true quando 9090 è OPEN per tutti gli attivi
+
+evidence:
+  dns_console: "EVIDENCE/dns_console.txt"
+  dns_proxies: "EVIDENCE/dns_proxies.txt"
+  pki_console: "EVIDENCE/pki_console.txt"
+  pki_proxies: "EVIDENCE/pki_proxies.txt"
+  reachability: "EVIDENCE/reach_f2p.txt"
+  proxies_list: "EVIDENCE/proxies_list.txt"
+  git_versions: "EVIDENCE/git_versions.txt"
+
+risks_open: []
+
+decision_request:
+  status: "REVIEW"  # REVIEW | APPROVED | CHANGES_REQUESTED
+  actions_proposed: []
+

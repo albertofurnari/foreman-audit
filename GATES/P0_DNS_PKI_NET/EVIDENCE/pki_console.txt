@@ -1,0 +1,4 @@
+issuer=C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group
+subject=C=IT, ST=VARESE, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group
+notBefore=Jan 22 11:38:52 2024 GMT
+notAfter=Jan 18 11:38:53 2038 GMT

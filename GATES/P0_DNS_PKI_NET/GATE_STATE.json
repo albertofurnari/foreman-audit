@@ -1,0 +1,12 @@
+{
+  "gate": "P0",
+  "status": "DRAFT",
+  "submitted_at": null,
+  "approvals": {
+    "gpt5": null,
+    "gemini": null
+  },
+  "hash": null,
+  "notes": "Freeze after SUBMITTED; proceed only with double approval."
+}
+

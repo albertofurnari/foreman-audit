@@ -1,0 +1,34 @@
+=== PROXIES DNS ===
+--- itmxvlpforaio01.it.cobra.group / 192.168.8.130 ---
+192.168.8.130
+itmxvlpforaio01.it.cobra.group.
+--- itmxvlpforprxd01.it.cobra.group / 192.168.8.132 ---
+192.168.8.132
+itmxvlpforprxd01.it.cobra.group.
+--- itmxvlpforprxi01.vfintgr.local / 10.88.88.220 ---
+10.88.88.220
+itmxvlpforprxi01.vfintgr.local.
+--- itmxvlpforprxt01.it.cobra.group / 192.168.8.133 ---
+192.168.8.133
+itmxvlpforprxt01.it.cobra.group.
+--- itmxvlpforprxo01.it.cobra.group / 192.168.8.135 ---
+192.168.8.135
+itmxvlpforprxo01.it.cobra.group.
+--- itva01vlpfpxsmgt01.intra.cobra.it / 10.50.2.100 ---
+10.50.2.100
+--- itva01vlpfpxptwh01.intra.cobra.it / 10.99.103.201 ---
+10.99.103.201
+--- itpsvlpforprx01.vfadc.local / 10.171.12.31 ---
+10.171.12.31
+--- itva01vlpfpxbrwn01.vfabrown.local / N/A ---
+WARN: forward DNS unresolved for itva01vlpfpxbrwn01.vfabrown.local
+--- itva01vlpfpxprdm01.intra.cobra.it / 10.101.0.150 ---
+10.101.0.150
+--- itva01vlpfpxdte01.intra.cobra.it / 10.100.0.100 ---
+10.100.0.100
+--- itmxvlpforprxp02.it.cobra.group / 192.168.8.134 ---
+192.168.8.134
+itmxvlpforprxp02.it.cobra.group.
+--- esmadvlpforprx01.it.cobra.group / 192.168.24.42 ---
+192.168.24.42
+esmadvlpforprx01.it.cobra.group.

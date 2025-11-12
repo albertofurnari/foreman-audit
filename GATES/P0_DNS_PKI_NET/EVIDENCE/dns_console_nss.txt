@@ -1,0 +1,7 @@
+=== CONSOLE FQDN -> A (NSS) ===
+itmxvlpforaio01.it.cobra.group
+192.168.8.130   itmxvlpforaio01.it.cobra.group itmxvlpforaio01
+
+=== CONSOLE IP -> PTR (NSS) ===
+192.168.8.130
+192.168.8.130   itmxvlpforaio01.it.cobra.group itmxvlpforaio01

@@ -1,0 +1,7 @@
+=== CONSOLE FQDN -> A ===
+itmxvlpforaio01.it.cobra.group
+192.168.8.130
+
+=== CONSOLE IP -> PTR ===
+192.168.8.130
+itmxvlpforaio01.it.cobra.group.

@@ -1,0 +1,63 @@
+=== PROXIES PKI (9090) ===
+--- itmxvlpforaio01.it.cobra.group ---
+issuer=C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group
+subject=C=IT, ST=VARESE, O=FOREMAN, OU=SMART_PROXY, CN=itmxvlpforaio01.it.cobra.group
+notBefore=Jan 22 11:38:55 2024 GMT
+notAfter=Jan 18 11:38:56 2038 GMT
+--- itmxvlpforprxd01.it.cobra.group ---
+issuer=C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group
+subject=C=US, ST=North Carolina, O=FOREMAN, OU=SMART_PROXY, CN=itmxvlpforprxd01.it.cobra.group
+notBefore=Jan 19 14:12:07 2024 GMT
+notAfter=Jan 18 14:12:08 2038 GMT
+--- itmxvlpforprxi01.vfintgr.local ---
+issuer=C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group
+subject=C=US, ST=North Carolina, O=FOREMAN, OU=SMART_PROXY, CN=itmxvlpforprxi01.vfintgr.local
+notBefore=Jan 19 14:11:46 2024 GMT
+notAfter=Jan 18 14:11:47 2038 GMT
+--- itmxvlpforprxt01.it.cobra.group ---
+issuer=C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group
+subject=C=US, ST=North Carolina, O=FOREMAN, OU=SMART_PROXY, CN=itmxvlpforprxt01.it.cobra.group
+notBefore=Jan 19 14:10:42 2024 GMT
+notAfter=Jan 18 14:10:43 2038 GMT
+--- itmxvlpforprxo01.it.cobra.group ---
+issuer=C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group
+subject=C=US, ST=North Carolina, O=FOREMAN, OU=SMART_PROXY, CN=itmxvlpforprxo01.it.cobra.group
+notBefore=Jan 19 14:11:22 2024 GMT
+notAfter=Jan 18 14:11:25 2038 GMT
+--- itva01vlpfpxsmgt01.intra.cobra.it ---
+issuer=C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group
+subject=C=US, ST=North Carolina, O=FOREMAN, OU=SMART_PROXY, CN=itva01vlpfpxsmgt01.intra.cobra.it
+notBefore=Jan 19 14:08:58 2024 GMT
+notAfter=Jan 18 14:08:59 2038 GMT
+--- itva01vlpfpxptwh01.intra.cobra.it ---
+issuer=C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group
+subject=C=US, ST=North Carolina, O=FOREMAN, OU=SMART_PROXY, CN=itva01vlpfpxptwh01.intra.cobra.it
+notBefore=Jan 19 13:53:38 2024 GMT
+notAfter=Jan 18 13:53:39 2038 GMT
+--- itpsvlpforprx01.vfadc.local ---
+issuer=C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group
+subject=C=US, ST=North Carolina, O=FOREMAN, OU=SMART_PROXY, CN=itpsvlpforprx01.vfadc.local
+notBefore=Jan 19 14:10:22 2024 GMT
+notAfter=Jan 18 14:10:22 2038 GMT
+--- itva01vlpfpxbrwn01.vfabrown.local ---
+ERR: openssl handshake failed for itva01vlpfpxbrwn01.vfabrown.local
+--- itva01vlpfpxprdm01.intra.cobra.it ---
+issuer=C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group
+subject=C=US, ST=North Carolina, O=FOREMAN, OU=SMART_PROXY, CN=itva01vlpfpxprdm01.intra.cobra.it
+notBefore=Jan 19 14:09:20 2024 GMT
+notAfter=Jan 18 14:09:21 2038 GMT
+--- itva01vlpfpxdte01.intra.cobra.it ---
+issuer=C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group
+subject=C=US, ST=North Carolina, O=FOREMAN, OU=SMART_PROXY, CN=itva01vlpfpxdte01.intra.cobra.it
+notBefore=Jan 19 14:09:42 2024 GMT
+notAfter=Jan 18 14:09:43 2038 GMT
+--- itmxvlpforprxp02.it.cobra.group ---
+issuer=C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group
+subject=C=US, ST=North Carolina, O=FOREMAN, OU=SMART_PROXY, CN=itmxvlpforprxp02.it.cobra.group
+notBefore=Mar 11 15:36:19 2024 GMT
+notAfter=Jan 17 15:36:20 2038 GMT
+--- esmadvlpforprx01.it.cobra.group ---
+issuer=C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group
+subject=C=US, ST=North Carolina, O=FOREMAN, OU=SMART_PROXY, CN=esmadvlpforprx01.it.cobra.group
+notBefore=Oct 29 11:28:18 2025 GMT
+notAfter=Jan 18 11:28:19 2038 GMT

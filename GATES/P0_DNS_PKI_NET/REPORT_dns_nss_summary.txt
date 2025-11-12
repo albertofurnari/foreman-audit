@@ -1,0 +1,2 @@
+NSS forward/reverse check report
+Summary: PASS (NSS) on 8 hosts (excluded: 1)

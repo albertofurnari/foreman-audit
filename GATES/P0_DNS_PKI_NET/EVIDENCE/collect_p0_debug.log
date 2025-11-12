@@ -1,0 +1,513 @@
++ set -euo pipefail
++++ dirname collect_p0.sh
+++ cd .
+++ pwd
++ BASE=/srv/foreman-audit/GATES/P0_DNS_PKI_NET
++ EVD=/srv/foreman-audit/GATES/P0_DNS_PKI_NET/EVIDENCE
++ mkdir -p /srv/foreman-audit/GATES/P0_DNS_PKI_NET/EVIDENCE
++ need hammer
++ command -v hammer
++ need openssl
++ command -v openssl
++ DIG=dig
++ command -v dig
++ command -v nc
++ CONSOLE_FQDN=itmxvlpforaio01.it.cobra.group
++ CONSOLE_IP=192.168.8.130
++ echo '=== CONSOLE FQDN -> A ==='
++ echo itmxvlpforaio01.it.cobra.group
++ '[' dig = dig ']'
++ dig +short itmxvlpforaio01.it.cobra.group
++ echo
++ echo '=== CONSOLE IP -> PTR ==='
++ echo 192.168.8.130
++ '[' dig = dig ']'
++ dig -x 192.168.8.130 +short
++ openssl s_client -connect itmxvlpforaio01.it.cobra.group:443 -servername itmxvlpforaio01.it.cobra.group
++ openssl x509 -noout -issuer -subject -dates
++ mapfile -t PROXIES
+++ hammer --csv proxy list
+++ awk -F, 'NR>1{print $2}'
++ printf '%s\n' itmxvlpforaio01.it.cobra.group itmxvlpforprxd01.it.cobra.group itmxvlpforprxi01.vfintgr.local itmxvlpforprxt01.it.cobra.group itmxvlpforprxo01.it.cobra.group itva01vlpfpxsmgt01.intra.cobra.it itva01vlpfpxptwh01.intra.cobra.it itpsvlpforprx01.vfadc.local itva01vlpfpxbrwn01.vfabrown.local itva01vlpfpxprdm01.intra.cobra.it itva01vlpfpxdte01.intra.cobra.it itmxvlpforprxp02.it.cobra.group esmadvlpforprx01.it.cobra.group
++ echo '=== PROXIES DNS ==='
++ for P in "${PROXIES[@]}"
+++ getent hosts itmxvlpforaio01.it.cobra.group
+++ awk '{print $1}'
++ IP=192.168.8.130
++ echo '--- itmxvlpforaio01.it.cobra.group / 192.168.8.130 ---'
++ '[' dig = dig ']'
++ dig +short itmxvlpforaio01.it.cobra.group
++ '[' -n 192.168.8.130 ']'
++ '[' dig = dig ']'
++ dig -x 192.168.8.130 +short
++ for P in "${PROXIES[@]}"
+++ getent hosts itmxvlpforprxd01.it.cobra.group
+++ awk '{print $1}'
++ IP=192.168.8.132
++ echo '--- itmxvlpforprxd01.it.cobra.group / 192.168.8.132 ---'
++ '[' dig = dig ']'
++ dig +short itmxvlpforprxd01.it.cobra.group
++ '[' -n 192.168.8.132 ']'
++ '[' dig = dig ']'
++ dig -x 192.168.8.132 +short
++ for P in "${PROXIES[@]}"
+++ getent hosts itmxvlpforprxi01.vfintgr.local
+++ awk '{print $1}'
++ IP=10.88.88.220
++ echo '--- itmxvlpforprxi01.vfintgr.local / 10.88.88.220 ---'
++ '[' dig = dig ']'
++ dig +short itmxvlpforprxi01.vfintgr.local
++ '[' -n 10.88.88.220 ']'
++ '[' dig = dig ']'
++ dig -x 10.88.88.220 +short
++ for P in "${PROXIES[@]}"
+++ getent hosts itmxvlpforprxt01.it.cobra.group
+++ awk '{print $1}'
++ IP=192.168.8.133
++ echo '--- itmxvlpforprxt01.it.cobra.group / 192.168.8.133 ---'
++ '[' dig = dig ']'
++ dig +short itmxvlpforprxt01.it.cobra.group
++ '[' -n 192.168.8.133 ']'
++ '[' dig = dig ']'
++ dig -x 192.168.8.133 +short
++ for P in "${PROXIES[@]}"
+++ getent hosts itmxvlpforprxo01.it.cobra.group
+++ awk '{print $1}'
++ IP=192.168.8.135
++ echo '--- itmxvlpforprxo01.it.cobra.group / 192.168.8.135 ---'
++ '[' dig = dig ']'
++ dig +short itmxvlpforprxo01.it.cobra.group
++ '[' -n 192.168.8.135 ']'
++ '[' dig = dig ']'
++ dig -x 192.168.8.135 +short
++ for P in "${PROXIES[@]}"
+++ getent hosts itva01vlpfpxsmgt01.intra.cobra.it
+++ awk '{print $1}'
++ IP=10.50.2.100
++ echo '--- itva01vlpfpxsmgt01.intra.cobra.it / 10.50.2.100 ---'
++ '[' dig = dig ']'
++ dig +short itva01vlpfpxsmgt01.intra.cobra.it
++ '[' -n 10.50.2.100 ']'
++ '[' dig = dig ']'
++ dig -x 10.50.2.100 +short
++ for P in "${PROXIES[@]}"
+++ getent hosts itva01vlpfpxptwh01.intra.cobra.it
+++ awk '{print $1}'
++ IP=10.99.103.201
++ echo '--- itva01vlpfpxptwh01.intra.cobra.it / 10.99.103.201 ---'
++ '[' dig = dig ']'
++ dig +short itva01vlpfpxptwh01.intra.cobra.it
++ '[' -n 10.99.103.201 ']'
++ '[' dig = dig ']'
++ dig -x 10.99.103.201 +short
++ for P in "${PROXIES[@]}"
+++ getent hosts itpsvlpforprx01.vfadc.local
+++ awk '{print $1}'
++ IP=10.171.12.31
++ echo '--- itpsvlpforprx01.vfadc.local / 10.171.12.31 ---'
++ '[' dig = dig ']'
++ dig +short itpsvlpforprx01.vfadc.local
++ '[' -n 10.171.12.31 ']'
++ '[' dig = dig ']'
++ dig -x 10.171.12.31 +short
++ for P in "${PROXIES[@]}"
+++ getent hosts itva01vlpfpxbrwn01.vfabrown.local
+++ awk '{print $1}'
+++ true
++ IP=
++ echo '--- itva01vlpfpxbrwn01.vfabrown.local / N/A ---'
++ '[' dig = dig ']'
++ dig +short itva01vlpfpxbrwn01.vfabrown.local
++ '[' -n '' ']'
++ echo 'WARN: forward DNS unresolved for itva01vlpfpxbrwn01.vfabrown.local'
++ for P in "${PROXIES[@]}"
+++ getent hosts itva01vlpfpxprdm01.intra.cobra.it
+++ awk '{print $1}'
++ IP=10.101.0.150
++ echo '--- itva01vlpfpxprdm01.intra.cobra.it / 10.101.0.150 ---'
++ '[' dig = dig ']'
++ dig +short itva01vlpfpxprdm01.intra.cobra.it
++ '[' -n 10.101.0.150 ']'
++ '[' dig = dig ']'
++ dig -x 10.101.0.150 +short
++ for P in "${PROXIES[@]}"
+++ getent hosts itva01vlpfpxdte01.intra.cobra.it
+++ awk '{print $1}'
++ IP=10.100.0.100
++ echo '--- itva01vlpfpxdte01.intra.cobra.it / 10.100.0.100 ---'
++ '[' dig = dig ']'
++ dig +short itva01vlpfpxdte01.intra.cobra.it
++ '[' -n 10.100.0.100 ']'
++ '[' dig = dig ']'
++ dig -x 10.100.0.100 +short
++ for P in "${PROXIES[@]}"
+++ getent hosts itmxvlpforprxp02.it.cobra.group
+++ awk '{print $1}'
++ IP=192.168.8.134
++ echo '--- itmxvlpforprxp02.it.cobra.group / 192.168.8.134 ---'
++ '[' dig = dig ']'
++ dig +short itmxvlpforprxp02.it.cobra.group
++ '[' -n 192.168.8.134 ']'
++ '[' dig = dig ']'
++ dig -x 192.168.8.134 +short
++ for P in "${PROXIES[@]}"
+++ getent hosts esmadvlpforprx01.it.cobra.group
+++ awk '{print $1}'
++ IP=192.168.24.42
++ echo '--- esmadvlpforprx01.it.cobra.group / 192.168.24.42 ---'
++ '[' dig = dig ']'
++ dig +short esmadvlpforprx01.it.cobra.group
++ '[' -n 192.168.24.42 ']'
++ '[' dig = dig ']'
++ dig -x 192.168.24.42 +short
++ echo '=== PROXIES PKI (9090) ==='
++ for P in "${PROXIES[@]}"
++ echo '--- itmxvlpforaio01.it.cobra.group ---'
++ openssl s_client -connect itmxvlpforaio01.it.cobra.group:9090 -servername itmxvlpforaio01.it.cobra.group
++ openssl x509 -noout -issuer -subject -dates
++ for P in "${PROXIES[@]}"
++ echo '--- itmxvlpforprxd01.it.cobra.group ---'
++ openssl s_client -connect itmxvlpforprxd01.it.cobra.group:9090 -servername itmxvlpforprxd01.it.cobra.group
++ openssl x509 -noout -issuer -subject -dates
++ for P in "${PROXIES[@]}"
++ echo '--- itmxvlpforprxi01.vfintgr.local ---'
++ openssl s_client -connect itmxvlpforprxi01.vfintgr.local:9090 -servername itmxvlpforprxi01.vfintgr.local
++ openssl x509 -noout -issuer -subject -dates
++ for P in "${PROXIES[@]}"
++ echo '--- itmxvlpforprxt01.it.cobra.group ---'
++ openssl s_client -connect itmxvlpforprxt01.it.cobra.group:9090 -servername itmxvlpforprxt01.it.cobra.group
++ openssl x509 -noout -issuer -subject -dates
++ for P in "${PROXIES[@]}"
++ echo '--- itmxvlpforprxo01.it.cobra.group ---'
++ openssl s_client -connect itmxvlpforprxo01.it.cobra.group:9090 -servername itmxvlpforprxo01.it.cobra.group
++ openssl x509 -noout -issuer -subject -dates
++ for P in "${PROXIES[@]}"
++ echo '--- itva01vlpfpxsmgt01.intra.cobra.it ---'
++ openssl s_client -connect itva01vlpfpxsmgt01.intra.cobra.it:9090 -servername itva01vlpfpxsmgt01.intra.cobra.it
++ openssl x509 -noout -issuer -subject -dates
++ for P in "${PROXIES[@]}"
++ echo '--- itva01vlpfpxptwh01.intra.cobra.it ---'
++ openssl s_client -connect itva01vlpfpxptwh01.intra.cobra.it:9090 -servername itva01vlpfpxptwh01.intra.cobra.it
++ openssl x509 -noout -issuer -subject -dates
++ for P in "${PROXIES[@]}"
++ echo '--- itpsvlpforprx01.vfadc.local ---'
++ openssl s_client -connect itpsvlpforprx01.vfadc.local:9090 -servername itpsvlpforprx01.vfadc.local
++ openssl x509 -noout -issuer -subject -dates
++ for P in "${PROXIES[@]}"
++ echo '--- itva01vlpfpxbrwn01.vfabrown.local ---'
++ openssl s_client -connect itva01vlpfpxbrwn01.vfabrown.local:9090 -servername itva01vlpfpxbrwn01.vfabrown.local
++ openssl x509 -noout -issuer -subject -dates
+Could not find certificate from <stdin>
++ echo 'ERR: openssl handshake failed for itva01vlpfpxbrwn01.vfabrown.local'
++ for P in "${PROXIES[@]}"
++ echo '--- itva01vlpfpxprdm01.intra.cobra.it ---'
++ openssl s_client -connect itva01vlpfpxprdm01.intra.cobra.it:9090 -servername itva01vlpfpxprdm01.intra.cobra.it
++ openssl x509 -noout -issuer -subject -dates
++ for P in "${PROXIES[@]}"
++ echo '--- itva01vlpfpxdte01.intra.cobra.it ---'
++ openssl s_client -connect itva01vlpfpxdte01.intra.cobra.it:9090 -servername itva01vlpfpxdte01.intra.cobra.it
++ openssl x509 -noout -issuer -subject -dates
++ for P in "${PROXIES[@]}"
++ echo '--- itmxvlpforprxp02.it.cobra.group ---'
++ openssl s_client -connect itmxvlpforprxp02.it.cobra.group:9090 -servername itmxvlpforprxp02.it.cobra.group
++ openssl x509 -noout -issuer -subject -dates
++ for P in "${PROXIES[@]}"
++ echo '--- esmadvlpforprx01.it.cobra.group ---'
++ openssl s_client -connect esmadvlpforprx01.it.cobra.group:9090 -servername esmadvlpforprx01.it.cobra.group
++ openssl x509 -noout -issuer -subject -dates
++ PORTS=(9090 5647 443 8443 8140)
++ echo '=== REACHABILITY Foreman->Proxies ==='
++ for P in "${PROXIES[@]}"
++ echo '--- itmxvlpforaio01.it.cobra.group ---'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforaio01.it.cobra.group 9090
++ echo 'OPEN 9090'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforaio01.it.cobra.group 5647
++ echo 'CLOSED 5647'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforaio01.it.cobra.group 443
++ echo 'OPEN 443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforaio01.it.cobra.group 8443
++ echo 'CLOSED 8443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforaio01.it.cobra.group 8140
++ echo 'OPEN 8140'
++ for P in "${PROXIES[@]}"
++ echo '--- itmxvlpforprxd01.it.cobra.group ---'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxd01.it.cobra.group 9090
++ echo 'OPEN 9090'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxd01.it.cobra.group 5647
++ echo 'CLOSED 5647'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxd01.it.cobra.group 443
++ echo 'OPEN 443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxd01.it.cobra.group 8443
++ echo 'CLOSED 8443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxd01.it.cobra.group 8140
++ echo 'OPEN 8140'
++ for P in "${PROXIES[@]}"
++ echo '--- itmxvlpforprxi01.vfintgr.local ---'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxi01.vfintgr.local 9090
++ echo 'OPEN 9090'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxi01.vfintgr.local 5647
++ echo 'CLOSED 5647'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxi01.vfintgr.local 443
++ echo 'OPEN 443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxi01.vfintgr.local 8443
++ echo 'CLOSED 8443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxi01.vfintgr.local 8140
++ echo 'OPEN 8140'
++ for P in "${PROXIES[@]}"
++ echo '--- itmxvlpforprxt01.it.cobra.group ---'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxt01.it.cobra.group 9090
++ echo 'OPEN 9090'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxt01.it.cobra.group 5647
++ echo 'CLOSED 5647'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxt01.it.cobra.group 443
++ echo 'OPEN 443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxt01.it.cobra.group 8443
++ echo 'CLOSED 8443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxt01.it.cobra.group 8140
++ echo 'OPEN 8140'
++ for P in "${PROXIES[@]}"
++ echo '--- itmxvlpforprxo01.it.cobra.group ---'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxo01.it.cobra.group 9090
++ echo 'OPEN 9090'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxo01.it.cobra.group 5647
++ echo 'CLOSED 5647'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxo01.it.cobra.group 443
++ echo 'OPEN 443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxo01.it.cobra.group 8443
++ echo 'CLOSED 8443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxo01.it.cobra.group 8140
++ echo 'OPEN 8140'
++ for P in "${PROXIES[@]}"
++ echo '--- itva01vlpfpxsmgt01.intra.cobra.it ---'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxsmgt01.intra.cobra.it 9090
++ echo 'OPEN 9090'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxsmgt01.intra.cobra.it 5647
++ echo 'CLOSED 5647'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxsmgt01.intra.cobra.it 443
++ echo 'OPEN 443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxsmgt01.intra.cobra.it 8443
++ echo 'CLOSED 8443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxsmgt01.intra.cobra.it 8140
++ echo 'OPEN 8140'
++ for P in "${PROXIES[@]}"
++ echo '--- itva01vlpfpxptwh01.intra.cobra.it ---'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxptwh01.intra.cobra.it 9090
++ echo 'OPEN 9090'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxptwh01.intra.cobra.it 5647
++ echo 'CLOSED 5647'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxptwh01.intra.cobra.it 443
++ echo 'OPEN 443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxptwh01.intra.cobra.it 8443
++ echo 'CLOSED 8443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxptwh01.intra.cobra.it 8140
++ echo 'OPEN 8140'
++ for P in "${PROXIES[@]}"
++ echo '--- itpsvlpforprx01.vfadc.local ---'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itpsvlpforprx01.vfadc.local 9090
++ echo 'OPEN 9090'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itpsvlpforprx01.vfadc.local 5647
++ echo 'CLOSED 5647'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itpsvlpforprx01.vfadc.local 443
++ echo 'OPEN 443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itpsvlpforprx01.vfadc.local 8443
++ echo 'CLOSED 8443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itpsvlpforprx01.vfadc.local 8140
++ echo 'OPEN 8140'
++ for P in "${PROXIES[@]}"
++ echo '--- itva01vlpfpxbrwn01.vfabrown.local ---'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxbrwn01.vfabrown.local 9090
++ echo 'CLOSED 9090'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxbrwn01.vfabrown.local 5647
++ echo 'CLOSED 5647'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxbrwn01.vfabrown.local 443
++ echo 'CLOSED 443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxbrwn01.vfabrown.local 8443
++ echo 'CLOSED 8443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxbrwn01.vfabrown.local 8140
++ echo 'CLOSED 8140'
++ for P in "${PROXIES[@]}"
++ echo '--- itva01vlpfpxprdm01.intra.cobra.it ---'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxprdm01.intra.cobra.it 9090
++ echo 'OPEN 9090'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxprdm01.intra.cobra.it 5647
++ echo 'CLOSED 5647'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxprdm01.intra.cobra.it 443
++ echo 'OPEN 443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxprdm01.intra.cobra.it 8443
++ echo 'CLOSED 8443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxprdm01.intra.cobra.it 8140
++ echo 'OPEN 8140'
++ for P in "${PROXIES[@]}"
++ echo '--- itva01vlpfpxdte01.intra.cobra.it ---'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxdte01.intra.cobra.it 9090
++ echo 'OPEN 9090'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxdte01.intra.cobra.it 5647
++ echo 'CLOSED 5647'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxdte01.intra.cobra.it 443
++ echo 'OPEN 443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxdte01.intra.cobra.it 8443
++ echo 'CLOSED 8443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itva01vlpfpxdte01.intra.cobra.it 8140
++ echo 'OPEN 8140'
++ for P in "${PROXIES[@]}"
++ echo '--- itmxvlpforprxp02.it.cobra.group ---'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxp02.it.cobra.group 9090
++ echo 'OPEN 9090'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxp02.it.cobra.group 5647
++ echo 'CLOSED 5647'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxp02.it.cobra.group 443
++ echo 'OPEN 443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxp02.it.cobra.group 8443
++ echo 'CLOSED 8443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 itmxvlpforprxp02.it.cobra.group 8140
++ echo 'OPEN 8140'
++ for P in "${PROXIES[@]}"
++ echo '--- esmadvlpforprx01.it.cobra.group ---'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 esmadvlpforprx01.it.cobra.group 9090
++ echo 'OPEN 9090'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 esmadvlpforprx01.it.cobra.group 5647
++ echo 'CLOSED 5647'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 esmadvlpforprx01.it.cobra.group 443
++ echo 'OPEN 443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 esmadvlpforprx01.it.cobra.group 8443
++ echo 'CLOSED 8443'
++ for port in "${PORTS[@]}"
++ command -v nc
++ nc -vz -w2 esmadvlpforprx01.it.cobra.group 8140
++ echo 'CLOSED 8140'
++ echo '=== GIT VERSION ==='
++ date -Is
++ git --version
++ cd /srv/foreman-audit/GATES/P0_DNS_PKI_NET
++ find EVIDENCE -type f -print0
++ xargs -0 sha256sum
++ echo 'P0 evidence collected in: /srv/foreman-audit/GATES/P0_DNS_PKI_NET/EVIDENCE'
+P0 evidence collected in: /srv/foreman-audit/GATES/P0_DNS_PKI_NET/EVIDENCE

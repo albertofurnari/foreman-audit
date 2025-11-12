@@ -1,0 +1,33 @@
+DNS A/PTR consistency report
+File: EVIDENCE/dns_proxies.txt
+Total: 28 | PASS: 0 | FAIL: 28
+
+Failures:
+- itmxvlpforaio01.it.cobra.group (hdr:192.168.8.130 fwd: ptr:) [no-forward no-ptr ]
+- 192.168.8.130 (hdr:192.168.8.130 fwd: ptr:) [no-forward no-ptr ]
+- itmxvlpforaio01.it.cobra.group. (hdr:itmxvlpforaio01.it.cobra.group. fwd: ptr:) [no-forward no-ptr ]
+- itmxvlpforprxd01.it.cobra.group (hdr:192.168.8.132 fwd: ptr:192.168.8.132) [no-forward ptr!=host ]
+- itmxvlpforprxd01.it.cobra.group. (hdr:itmxvlpforprxd01.it.cobra.group. fwd: ptr:) [no-forward no-ptr ]
+- itmxvlpforprxi01.vfintgr.local (hdr:10.88.88.220 fwd: ptr:) [no-forward no-ptr ]
+- 10.88.88.220 (hdr:10.88.88.220 fwd: ptr:) [no-forward no-ptr ]
+- itmxvlpforprxi01.vfintgr.local. (hdr:itmxvlpforprxi01.vfintgr.local. fwd: ptr:) [no-forward no-ptr ]
+- itmxvlpforprxt01.it.cobra.group (hdr:192.168.8.133 fwd: ptr:192.168.8.133) [no-forward ptr!=host ]
+- itmxvlpforprxt01.it.cobra.group. (hdr:itmxvlpforprxt01.it.cobra.group. fwd: ptr:) [no-forward no-ptr ]
+- itmxvlpforprxo01.it.cobra.group (hdr:192.168.8.135 fwd: ptr:192.168.8.135) [no-forward ptr!=host ]
+- itmxvlpforprxo01.it.cobra.group. (hdr:itmxvlpforprxo01.it.cobra.group. fwd: ptr:) [no-forward no-ptr ]
+- itva01vlpfpxsmgt01.intra.cobra.it (hdr:10.50.2.100 fwd: ptr:) [no-forward no-ptr ]
+- 10.50.2.100 (hdr:10.50.2.100 fwd: ptr:) [no-forward no-ptr ]
+- itva01vlpfpxptwh01.intra.cobra.it (hdr:10.99.103.201 fwd: ptr:) [no-forward no-ptr ]
+- 10.99.103.201 (hdr:10.99.103.201 fwd: ptr:) [no-forward no-ptr ]
+- itpsvlpforprx01.vfadc.local (hdr:10.171.12.31 fwd: ptr:) [no-forward no-ptr ]
+- 10.171.12.31 (hdr:10.171.12.31 fwd: ptr:) [no-forward no-ptr ]
+- itva01vlpfpxbrwn01.vfabrown.local (hdr:A fwd: ptr:) [no-forward no-ptr ]
+- WARN: forward DNS unresolved for itva01vlpfpxbrwn01.vfabrown.local (hdr:WARN:forwardDNSunresolvedforitva01vlpfpxbrwn01.vfabrown.local fwd: ptr:) [no-forward no-ptr ]
+- itva01vlpfpxprdm01.intra.cobra.it (hdr:10.101.0.150 fwd: ptr:) [no-forward no-ptr ]
+- 10.101.0.150 (hdr:10.101.0.150 fwd: ptr:) [no-forward no-ptr ]
+- itva01vlpfpxdte01.intra.cobra.it (hdr:10.100.0.100 fwd: ptr:) [no-forward no-ptr ]
+- 10.100.0.100 (hdr:10.100.0.100 fwd: ptr:) [no-forward no-ptr ]
+- itmxvlpforprxp02.it.cobra.group (hdr:192.168.8.134 fwd: ptr:192.168.8.134) [no-forward ptr!=host ]
+- itmxvlpforprxp02.it.cobra.group. (hdr:itmxvlpforprxp02.it.cobra.group. fwd: ptr:) [no-forward no-ptr ]
+- esmadvlpforprx01.it.cobra.group (hdr:192.168.24.42 fwd: ptr:192.168.24.42) [no-forward ptr!=host ]
+- esmadvlpforprx01.it.cobra.group. (hdr:esmadvlpforprx01.it.cobra.group. fwd: ptr:) [no-forward no-ptr ]

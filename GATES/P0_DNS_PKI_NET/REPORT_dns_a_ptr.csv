@@ -1,0 +1,29 @@
+host,header_ip,forward_ip,ptr_fqdn,status,notes
+itmxvlpforaio01.it.cobra.group,192.168.8.130,,,FAIL,no-forward no-ptr 
+192.168.8.130,192.168.8.130,,,FAIL,no-forward no-ptr 
+itmxvlpforaio01.it.cobra.group.,itmxvlpforaio01.it.cobra.group.,,,FAIL,no-forward no-ptr 
+itmxvlpforprxd01.it.cobra.group,192.168.8.132,,192.168.8.132,FAIL,no-forward ptr!=host 
+itmxvlpforprxd01.it.cobra.group.,itmxvlpforprxd01.it.cobra.group.,,,FAIL,no-forward no-ptr 
+itmxvlpforprxi01.vfintgr.local,10.88.88.220,,,FAIL,no-forward no-ptr 
+10.88.88.220,10.88.88.220,,,FAIL,no-forward no-ptr 
+itmxvlpforprxi01.vfintgr.local.,itmxvlpforprxi01.vfintgr.local.,,,FAIL,no-forward no-ptr 
+itmxvlpforprxt01.it.cobra.group,192.168.8.133,,192.168.8.133,FAIL,no-forward ptr!=host 
+itmxvlpforprxt01.it.cobra.group.,itmxvlpforprxt01.it.cobra.group.,,,FAIL,no-forward no-ptr 
+itmxvlpforprxo01.it.cobra.group,192.168.8.135,,192.168.8.135,FAIL,no-forward ptr!=host 
+itmxvlpforprxo01.it.cobra.group.,itmxvlpforprxo01.it.cobra.group.,,,FAIL,no-forward no-ptr 
+itva01vlpfpxsmgt01.intra.cobra.it,10.50.2.100,,,FAIL,no-forward no-ptr 
+10.50.2.100,10.50.2.100,,,FAIL,no-forward no-ptr 
+itva01vlpfpxptwh01.intra.cobra.it,10.99.103.201,,,FAIL,no-forward no-ptr 
+10.99.103.201,10.99.103.201,,,FAIL,no-forward no-ptr 
+itpsvlpforprx01.vfadc.local,10.171.12.31,,,FAIL,no-forward no-ptr 
+10.171.12.31,10.171.12.31,,,FAIL,no-forward no-ptr 
+itva01vlpfpxbrwn01.vfabrown.local,A,,,FAIL,no-forward no-ptr 
+WARN: forward DNS unresolved for itva01vlpfpxbrwn01.vfabrown.local,WARN:forwardDNSunresolvedforitva01vlpfpxbrwn01.vfabrown.local,,,FAIL,no-forward no-ptr 
+itva01vlpfpxprdm01.intra.cobra.it,10.101.0.150,,,FAIL,no-forward no-ptr 
+10.101.0.150,10.101.0.150,,,FAIL,no-forward no-ptr 
+itva01vlpfpxdte01.intra.cobra.it,10.100.0.100,,,FAIL,no-forward no-ptr 
+10.100.0.100,10.100.0.100,,,FAIL,no-forward no-ptr 
+itmxvlpforprxp02.it.cobra.group,192.168.8.134,,192.168.8.134,FAIL,no-forward ptr!=host 
+itmxvlpforprxp02.it.cobra.group.,itmxvlpforprxp02.it.cobra.group.,,,FAIL,no-forward no-ptr 
+esmadvlpforprx01.it.cobra.group,192.168.24.42,,192.168.24.42,FAIL,no-forward ptr!=host 
+esmadvlpforprx01.it.cobra.group.,esmadvlpforprx01.it.cobra.group.,,,FAIL,no-forward no-ptr 
