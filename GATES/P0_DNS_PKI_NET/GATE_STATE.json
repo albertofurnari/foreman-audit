@@ -8,6 +8,7 @@
   },
   "hash": null,
   "notes": "Freeze after SUBMITTED; proceed only with double approval.",
-  "state": "SUBMITTED",
-  "submitted_by": "itmxvlpforaio01"
+  "state": "APPROVED",
+  "submitted_by": "itmxvlpforaio01",
+  "approved_at": "2025-11-12T14:20:28+01:00"
 }
