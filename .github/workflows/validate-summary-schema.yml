@@ -1,0 +1,37 @@
+name: Validate SUMMARY.yaml against schema
+
+on:
+  push:
+    paths: ['GATES/**/SUMMARY.yaml', '.github/schemas/summary.schema.json']
+  pull_request:
+    paths: ['GATES/**/SUMMARY.yaml', '.github/schemas/summary.schema.json']
+
+jobs:
+  schema-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install yq and ajv
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y jq
+          curl -sSLo /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          chmod +x /usr/local/bin/yq
+          npm i -g ajv-cli@5 ajv-formats@2
+
+      - name: Convert YAML → JSON
+        run: |
+          set -euo pipefail
+          for f in $(git ls-files 'GATES/**/SUMMARY.yaml'); do
+            echo "Converting $f"
+            yq -o=json "$f" > "$f.json"
+          done
+
+      - name: Validate with AJV (JSON Schema)
+        run: |
+          ajv validate \
+            -s .github/schemas/summary.schema.json \
+            -d 'GATES/**/SUMMARY.yaml.json' \
+            --spec=draft2020 --all-errors
+

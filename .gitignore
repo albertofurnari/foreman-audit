@@ -1,0 +1,26 @@
+# Secrets & sensitive
+*.key
+*.crt
+*.pem
+*.pfx
+*.kubeconfig
+
+# Temporary & editor
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Archives / large blobs
+*.tar
+*.tar.gz
+*.zip
+
+# Logs (allow evidence logs)
+*.log
+!GATES/**/EVIDENCE/*.log
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
