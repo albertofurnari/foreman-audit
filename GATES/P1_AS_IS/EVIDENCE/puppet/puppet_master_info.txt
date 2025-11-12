@@ -1,0 +1,129 @@
+=== puppet config ===
+itmxvlpforaio01.it.cobra.group
+/etc/puppetlabs/code/environments
+
+=== puppetserver status (se esiste) ===
+● puppetserver.service - puppetserver Service
+     Loaded: loaded (/usr/lib/systemd/system/puppetserver.service; enabled; preset: disabled)
+    Drop-In: /etc/systemd/system/puppetserver.service.d
+             └─privatetmp.conf
+     Active: active (running) since Tue 2025-11-11 15:39:15 CET; 1 day 1h ago
+   Main PID: 3020807 (java)
+      Tasks: 181 (limit: 4915)
+     Memory: 2.7G
+        CPU: 8min 25.594s
+     CGroup: /system.slice/puppetserver.service
+             └─3020807 /usr/bin/java -Xms3G -Xmx6G -Dcom.redhat.fips=false -Djruby.logger.class=com.puppetlabs.jruby_utils.jruby.Slf4jLogger -Dlogappender=F1 -XX:+CrashOnOutOfMemoryError -XX:ErrorFile=/var/log/puppetlabs/puppetserver/puppetserver_err_pid%p.log -cp "/opt/puppetlabs/server/apps/puppetserver/puppet-server-release.jar:/opt/puppetlabs/puppet/lib/ruby/vendor_ruby/facter.jar:/opt/puppetlabs/server/data/puppetserver/jars/*" clojure.main -m puppetlabs.trapperkeeper.main --config /etc/puppetlabs/puppetserver/conf.d --bootstrap-config /etc/puppetlabs/puppetserver/services.d/,/opt/puppetlabs/server/apps/puppetserver/config/services.d/ --restart-file /opt/puppetlabs/server/data/puppetserver/restartcounter
+
+Nov 12 10:21:07 itmxvlpforaio01.it.cobra.group puppetserver[3020807]:         at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+Nov 12 10:21:07 itmxvlpforaio01.it.cobra.group puppetserver[3020807]:         at java.base/java.lang.Thread.run(Thread.java:840)
+Nov 12 10:21:07 itmxvlpforaio01.it.cobra.group puppetserver[3020807]: Caused by: java.lang.IllegalArgumentException: Not valid encoding '%./'
+Nov 12 10:21:07 itmxvlpforaio01.it.cobra.group puppetserver[3020807]:         at org.eclipse.jetty.util.UrlEncoded.decodeHexByte(UrlEncoded.java:903)
+Nov 12 10:21:07 itmxvlpforaio01.it.cobra.group puppetserver[3020807]:         at org.eclipse.jetty.util.UrlEncoded.decodeUtf8To(UrlEncoded.java:355)
+Nov 12 10:21:07 itmxvlpforaio01.it.cobra.group puppetserver[3020807]:         at org.eclipse.jetty.util.UrlEncoded.decodeUtf8To(UrlEncoded.java:296)
+Nov 12 10:21:07 itmxvlpforaio01.it.cobra.group puppetserver[3020807]:         at org.eclipse.jetty.http.HttpURI.decodeQueryTo(HttpURI.java:945)
+Nov 12 10:21:07 itmxvlpforaio01.it.cobra.group puppetserver[3020807]:         at org.eclipse.jetty.server.Request.extractQueryParameters(Request.java:498)
+Nov 12 10:21:07 itmxvlpforaio01.it.cobra.group puppetserver[3020807]:         at org.eclipse.jetty.server.Request.getParameters(Request.java:463)
+Nov 12 10:21:07 itmxvlpforaio01.it.cobra.group puppetserver[3020807]:         ... 28 more
+
+=== puppetserver CA summary/list ===
+Unknown action: summary
+Usage: puppetserver ca <action> [options]
+
+Manage the Private Key Infrastructure for
+Puppet Server's built-in Certificate Authority
+
+Available Actions:
+
+  Certificate Actions (requires a running Puppet Server):
+
+    clean	Revoke cert(s) and remove related files from CA
+    generate	Generate a new certificate signed by the CA
+    list	List certificates and CSRs
+    revoke	Revoke certificate(s)
+    sign	Sign certificate request(s)
+
+  Administrative Actions (requires Puppet Server to be stopped):
+
+    delete	Delete signed certificate(s) from disk
+    import	Import an external CA chain and generate server PKI
+    setup	Setup a self-signed CA chain for Puppet Server
+    enable	Setup infrastructure CRL based on a node inventory.
+    migrate	Migrate the existing CA directory to /etc/puppetlabs/puppetserver/ca
+    prune	Prune the local CRL on disk to remove certificate entries
+
+General Options:
+        --help                       Display this general help output
+        --version                    Display the version
+        --verbose                    Display low-level information
+
+Action Options:
+  clean:
+        --certname NAME[,NAME]       One or more comma separated certnames
+        --config CONF                Custom path to puppet.conf
+
+  delete:
+        --config CONF                Path to puppet.conf
+        --expired                    Delete expired signed certificates
+        --revoked                    Delete signed certificates that have already been revoked
+        --certname NAME[,NAME]       One or more comma-separated certnames for which to delete signed certificates
+        --all                        Delete all signed certificates on disk
+
+  enable:
+        --config CONF                Path to puppet.conf
+        --infracrl                   Create auxiliary files for the infrastructure-only CRL.
+
+  generate:
+        --certname NAME[,NAME]       One or more comma separated certnames
+        --config CONF                Path to puppet.conf
+        --subject-alt-names NAME[,NAME]
+        --ca-client                  Whether this cert will be used to request CA actions.
+        --force                      Suppress errors when signing cert offline.
+        --ttl TTL                    The time-to-live for each cert generated and signed
+
+  import:
+        --config CONF                Path to puppet.conf
+        --private-key KEY            Path to PEM encoded key
+        --cert-bundle BUNDLE         Path to PEM encoded bundle
+        --crl-chain CHAIN            Path to PEM encoded chain
+        --certname NAME              Common name to use for the server cert
+        --subject-alt-names NAME[,NAME]
+
+  list:
+        --config CONF                Custom path to Puppet's config file
+        --all                        List all certificates
+        --format FORMAT              Valid formats are: 'text' (default), 'json'
+        --certname NAME[,NAME]       List the specified cert(s)
+
+  migrate:
+        --config CONF                Path to puppet.conf
+
+  prune:
+        --config CONF                Path to the puppet.conf file on disk
+        --remove-duplicates          Remove duplicate entries from CRL(default)
+        --remove-expired             Remove expired  entries from CRL
+        --remove-entries             Remove entries from CRL
+        --serial NUMBER[,NUMBER]     Serial numbers(s) in HEX to be removed from CRL
+        --certname NAME[,NAME]       Name(s) of the cert(s) to be removed from CRL
+
+  revoke:
+        --certname NAME[,NAME]       One or more comma separated certnames
+        --config CONF                Custom path to puppet.conf
+
+  setup:
+        --config CONF                Path to puppet.conf
+        --subject-alt-names NAME[,NAME]
+        --ca-name NAME               Common name to use for the CA signing cert
+        --certname NAME              Common name to use for the server cert
+
+  sign:
+        --ttl TTL                    The time-to-live for each cert signed
+        --certname NAME[,NAME]       the name(s) of the cert(s) to be signed
+        --config CONF                Custom path to Puppet's config file
+        --all                        Operate on all certnames
+
+See `puppetserver ca <action> --help` for detailed info
+Fatal error when running action 'list'
+  Error: Failed connecting to https://itmxvlpforaio01.it.cobra.group:8140/puppet-ca/v1/certificate_statuses/any_key
+  Root cause: SSL_connect returned=1 errno=0 state=error: certificate verify failed (self signed certificate in certificate chain)
+puppetserver: non disponibile

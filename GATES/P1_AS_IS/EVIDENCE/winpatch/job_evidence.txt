@@ -1,0 +1,1 @@
+# Incolla qui output di una run reale (estratto log/CLI)

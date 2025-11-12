@@ -1,0 +1,3 @@
+host	reachable	agent_exit	last_lines
+host-mxp01.example	SKIPPED	-	CONFIGURE_SAMPLE_HOSTS
+host-va01.example	SKIPPED	-	CONFIGURE_SAMPLE_HOSTS

@@ -1,0 +1,49 @@
+# ——— Gate P1: ignore di sicurezza/igiene ———
+
+# Evita commit accidentali di segreti/cert/keystore
+*.pem
+*.key
+*.pfx
+*.p12
+*.jks
+*.kdb
+*.gpg
+*.asc
+*.crt           # (ok solo se sono pubblici; preferire estratti testuali)
+*.csr
+id_ecdsa
+id_ecdsa.pub
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.ovpn
+
+# Token/credenziali/config sensibili
+.env
+*.env
+*.token
+*.secrets
+*.cred
+*.password
+*.passwd
+*.kubeconfig
+
+# Output temporanei / editor swap
+*.swp
+*.swo
+*.tmp
+*.bak
+*.log~
+*~
+.DS_Store
+Thumbs.db
+
+# File generati durante le verifiche locali
+EVIDENCE/P1_SUGGESTED_SUMMARY.yaml
+EVIDENCE/*.tmp
+EVIDENCE/*.cache
+
+# (Nota) Non ignoriamo EVIDENCE/* di default: è il cuore probatorio del Gate.
+# Se serve escludere file voluminosi o irrilevanti, aggiungerli qui in modo mirato.
+

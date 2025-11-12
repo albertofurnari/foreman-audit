@@ -1,0 +1,1 @@
+# Incolla qui export/impostazioni GPO rilevanti per WSUS (WUServer/WUStatusServer)

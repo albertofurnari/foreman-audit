@@ -1,0 +1,49 @@
+{
+  "gate": "P1",
+  "title": "As-Is Disambiguation",
+  "state": "DRAFT",                         // DRAFT | SUBMITTED | APPROVED | CHANGES_REQUESTED
+  "created_at": "2025-11-12T00:00:00+01:00",
+  "submitted_at": null,
+  "approved_at": null,
+
+  "reviewers": {
+    "primary": "GPT-5 (Reviewer A)",
+    "secondary": "Gemini (Reviewer B)"
+  },
+
+  "depends_on": [
+    {
+      "gate": "P0",
+      "state_required": ["APPROVED", "APPROVED_WITH_WAIVER"],
+      "note": "P0 DNS waiver ammesso per procedere."
+    }
+  ],
+
+  "context": {
+    "console_fqdn": "itmxvlpforaio01.it.cobra.group",
+    "console_ip": "192.168.8.130",
+    "sites_expected": ["MXP", "VA", "PSP", "ES", "CST"]
+  },
+
+  "progress": {
+    "puppet": "PENDING",                    // PENDING | COLLECTED | VERIFIED
+    "rex_ansible": "PENDING",
+    "windows_patching": "PENDING"
+  },
+
+  "evidence": {
+    "paths": [
+      "GATES/P1_AS_IS/EVIDENCE/",
+      "GATES/P1_AS_IS/EVIDENCE/puppet/",
+      "GATES/P1_AS_IS/EVIDENCE/rex/",
+      "GATES/P1_AS_IS/EVIDENCE/ansible/",
+      "GATES/P1_AS_IS/EVIDENCE/winpatch/"
+    ],
+    "checksums_file": null
+  },
+
+  "risk_refs": [],
+  "waivers": [],
+  "notes": []
+}
+

@@ -1,0 +1,96 @@
+=== host: local ===
+ansible [core 2.16.5]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.11/site-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/local/bin/ansible
+  python version = 3.11.11 (main, Aug 21 2025, 00:00:00) [GCC 11.5.0 20240719 (Red Hat 11.5.0-5)] (/usr/bin/python3.11)
+  jinja version = 3.1.2
+  libyaml = False
+
+CALLBACKS_ENABLED(default) = []
+DEFAULT_CALLBACK_PLUGIN_PATH(default) = ['/root/.ansible/plugins/callback', '/usr/share/ansible/plugins/callback']
+DEFAULT_INVENTORY_PLUGIN_PATH(default) = ['/root/.ansible/plugins/inventory', '/usr/share/ansible/plugins/inventory']
+DEFAULT_LOAD_CALLBACK_PLUGINS(/etc/ansible/ansible.cfg) = True
+DEFAULT_STDOUT_CALLBACK(default) = default
+HOST_KEY_CHECKING(default) = True
+INVENTORY_ANY_UNPARSED_IS_FAILED(default) = False
+INVENTORY_CACHE_ENABLED(default) = False
+INVENTORY_CACHE_PLUGIN(default) = None
+INVENTORY_CACHE_PLUGIN_CONNECTION(default) = None
+INVENTORY_CACHE_PLUGIN_PREFIX(default) = ansible_inventory_
+INVENTORY_CACHE_TIMEOUT(default) = 3600
+INVENTORY_ENABLED(/etc/ansible/ansible.cfg) = ['vmware_vm_inventory', 'yaml', 'ini']
+INVENTORY_EXPORT(default) = False
+INVENTORY_IGNORE_EXTS(default) = ('.pyc', '.pyo', '.swp', '.bak', '~', '.rpm', '.md', '.txt', '.rst', '.orig', '.ini', '.cfg', '.retry')
+INVENTORY_IGNORE_PATTERNS(default) = []
+INVENTORY_UNPARSED_IS_FAILED(default) = False
+INVENTORY_UNPARSED_WARNING(default) = True
+
+--- /etc/ansible/hosts ---
+# This is the default ansible 'hosts' file.
+#
+# It should live in /etc/ansible/hosts
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - Groups of hosts are delimited by [header] elements
+#   - You can enter hostnames or ip addresses
+#   - A hostname/ip can be a member of multiple groups
+
+# Ex 1: Ungrouped hosts, specify before any group headers:
+
+## green.example.com
+## blue.example.com
+## 192.168.100.1
+## 192.168.100.10
+
+# Ex 2: A collection of hosts belonging to the 'webservers' group:
+
+## [webservers]
+## alpha.example.org
+## beta.example.org
+## 192.168.1.100
+## 192.168.1.110
+
+# If you have multiple hosts following a pattern, you can specify
+# them like this:
+
+## www[001:006].example.com
+
+# You can also use ranges for multiple hosts: 
+
+## db-[99:101]-node.example.com
+
+# Ex 3: A collection of database servers in the 'dbservers' group:
+
+## [dbservers]
+##
+## db01.intranet.mydomain.net
+## db02.intranet.mydomain.net
+## 10.25.1.56
+## 10.25.1.57
+
+
+# Ex4: Multiple hosts arranged into groups such as 'Debian' and 'openSUSE':
+
+## [Debian]
+## alpha.example.org
+## beta.example.org
+
+## [openSUSE]
+## green.example.com
+## blue.example.com
+
+
+{
+    "_meta": {
+        "hostvars": {}
+    },
+    "all": {
+        "children": [
+            "ungrouped"
+        ]
+    }
+}

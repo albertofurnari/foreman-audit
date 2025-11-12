@@ -1,0 +1,51 @@
+gate: P1
+title: "As-Is Disambiguation"
+scope: [PUPPET, REX_ANSIBLE, WINDOWS_PATCHING]
+
+context:
+  console_fqdn: itmxvlpforaio01.it.cobra.group
+  console_ip: 192.168.8.130
+  # Compila questi target prima di eseguire collect_p1.sh
+  targets:
+    puppet_sample_hosts: ["dte-bridgerhl01.it.cobra.group","itmxvldcloras2.it.cobra.group","itmxvltmalek1.it.cobra.group"]        # es. ["lin-mxp01.intra.cobra.it","lin-va01.intra.cobra.it"]
+    rex_mxp_host: "itmxvlpforprxo01.it.cobra.group"               # es. "lin-mxp01.intra.cobra.it"
+    rex_va_host: "itva01vlpfpxdte01.intra.cobra.it"                # es. "lin-va01.intra.cobra.it"
+    windows_sample_hosts: ["ITBUSTODC2.IT.Cobra.Group","ITBUSTODC1.IT.Cobra.Group"]       # es. ["win-mxp01.intra.cobra.it","win-va01.intra.cobra.it"]
+
+assertions:
+  puppet_active_and_reporting: false
+  rex_multi_site_exec_ok: false
+  windows_engine_proven: false
+
+puppet:
+  present: null                    # true|false|null (non verificato)
+  master_fqdn: ""
+  environmentpath: ""
+  envs: []                         # es. ["MXP_DEV","VA_PRD"]
+  reports_ok: null                 # true|false|null
+
+rex_ansible:
+  mode: ""                         # "REX" | "ANSIBLE_CONTROL_NODE" | "HYBRID" | ""
+  inventory_source: ""             # "FOREMAN" | "STATIC" | "BOTH" | "UNKNOWN" | ""
+  mxp_job_ok: false
+  va_job_ok: false
+
+windows_patching:
+  engine: ""                       # "WSUS" | "SCCM" | "Chocolatey" | "winget" | "Other"
+  orchestrated_by: ""              # "FOREMAN_REX" | "ANSIBLE" | "GPO" | "SCCM" | "Other"
+  evidence: false
+
+evidence:
+  paths:
+    - GATES/P1_AS_IS/EVIDENCE/puppet/
+    - GATES/P1_AS_IS/EVIDENCE/rex/
+    - GATES/P1_AS_IS/EVIDENCE/ansible/
+    - GATES/P1_AS_IS/EVIDENCE/winpatch/
+  checksums_file: GATES/P1_AS_IS/CHECKSUMS.txt
+  report_files:
+    - GATES/P1_AS_IS/EVIDENCE/P1_REPORT.txt
+    - GATES/P1_AS_IS/EVIDENCE/P1_SUGGESTED_SUMMARY.yaml
+
+gate_verdict: "REVIEW"             # REVIEW | PASS | FAIL
+notes: []
+

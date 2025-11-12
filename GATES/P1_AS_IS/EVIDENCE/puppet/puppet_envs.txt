@@ -1,0 +1,24 @@
+=== hammer environment list (preferito) ===
+Error: No such sub-command 'environment'.
+
+See: 'hammer --help'.
+---|-------------
+ID | NAME        
+---|-------------
+1  | MXP_PRD     
+2  | MXP_TEST    
+3  | MXP_DEV     
+4  | MXP_PIE     
+5  | MXP_OFFICE  
+6  | production  
+9  | VA_SVCS_MGMT
+10 | VA_DEV_TEST 
+11 | VA_DMZ_PROD 
+12 | VA_PLANT_WH 
+13 | VA_BROWN    
+15 | PSP_PRD     
+17 | common      
+---|-------------
+
+=== environmentpath (da puppet config) ===
+/etc/puppetlabs/code/environments

@@ -1,0 +1,422 @@
+=== hammer proxy list ===
+---|-----------------------------------|------------------------------------------------|---------------------------------------------------------------------------------
+ID | NAME                              | URL                                            | FEATURES                                                                        
+---|-----------------------------------|------------------------------------------------|---------------------------------------------------------------------------------
+1  | itmxvlpforaio01.it.cobra.group    | https://itmxvlpforaio01.it.cobra.group:9090    | Logs, DNS, BMC, Pulpcore, ACD, Script, Ansible, Discovery, Openscap, Shellhoo...
+2  | itmxvlpforprxd01.it.cobra.group   | https://itmxvlpforprxd01.it.cobra.group:9090   | Container_Gateway, Templates, Logs, Registration, ACD, Script, Ansible, Disco...
+3  | itmxvlpforprxi01.vfintgr.local    | https://itmxvlpforprxi01.vfintgr.local:9090    | Container_Gateway, Templates, Logs, Registration, Pulpcore, ACD, Script, Ansi...
+4  | itmxvlpforprxt01.it.cobra.group   | https://itmxvlpforprxt01.it.cobra.group:9090   | Shellhooks, Container_Gateway, Templates, Logs, Registration, ACD, Script, An...
+5  | itmxvlpforprxo01.it.cobra.group   | https://itmxvlpforprxo01.it.cobra.group:9090   | Container_Gateway, Templates, Logs, Registration, Pulpcore, Dynflow, ACD, Ans...
+7  | itva01vlpfpxsmgt01.intra.cobra.it | https://itva01vlpfpxsmgt01.intra.cobra.it:9090 | TFTP, Container_Gateway, Templates, Logs, Registration, Pulpcore, Dynflow, AC...
+9  | itva01vlpfpxptwh01.intra.cobra.it | https://itva01vlpfpxptwh01.intra.cobra.it:9090 | TFTP, Container_Gateway, Templates, Logs, Registration, Pulpcore, Dynflow, AC...
+10 | itpsvlpforprx01.vfadc.local       | https://itpsvlpforprx01.vfadc.local:9090       | Container_Gateway, Templates, Logs, Registration, Dynflow, ACD, Script, Ansib...
+11 | itva01vlpfpxbrwn01.vfabrown.local | https://itva01vlpfpxbrwn01.vfabrown.local:9090 | Container_Gateway, Templates, Logs, Registration, ACD, Discovery, Openscap, S...
+12 | itva01vlpfpxprdm01.intra.cobra.it | https://itva01vlpfpxprdm01.intra.cobra.it:9090 | Container_Gateway, Templates, Logs, Registration, Dynflow, ACD, Script, Ansib...
+13 | itva01vlpfpxdte01.intra.cobra.it  | https://itva01vlpfpxdte01.intra.cobra.it:9090  | TFTP, Container_Gateway, Dynflow, ACD, Script, Discovery, Openscap, Shellhook...
+14 | itmxvlpforprxp02.it.cobra.group   | https://itmxvlpforprxp02.it.cobra.group:9090   | Container_Gateway, Templates, Logs, Registration, TFTP, Dynflow, ACD, Script,...
+15 | esmadvlpforprx01.it.cobra.group   | https://esmadvlpforprx01.it.cobra.group:9090   | Pulpcore, Templates, Logs, Registration                                         
+---|-----------------------------------|------------------------------------------------|---------------------------------------------------------------------------------
+
+=== hammer proxy info (Features) ===
+--- itmxvlpforaio01.it.cobra.group ---
+Id:            1
+Name:          itmxvlpforaio01.it.cobra.group
+URL:           https://itmxvlpforaio01.it.cobra.group:9090
+Host count:    19
+Features:      
+ 1) Name: Logs
+ 2) Name: DNS
+ 3) Name: BMC
+ 4) Name: Pulpcore
+ 5) Name: ACD
+ 6) Name: Script
+ 7) Name: Ansible
+ 8) Name: Discovery
+ 9) Name: Openscap
+ 10)Name: Shellhooks
+ 11)Name: Templates
+ 12)Name: HTTPBoot
+ 13)Name: Puppet CA
+ 14)Name: Dynflow
+ 15)Name: Registration
+ 16)Name: TFTP
+ 17)Name: Puppet
+ 18)Name: Container_Gateway
+ 19)Name: Monitoring
+ 20)Name: Facts
+Locations:     
+    ES
+    MXP
+    PSP
+    VA
+Organizations: 
+    Vodafone Automotive
+Created at:    2023/06/19 11:38:07
+Updated at:    2024/05/27 18:30:43
+
+--- itmxvlpforprxd01.it.cobra.group ---
+Id:            2
+Name:          itmxvlpforprxd01.it.cobra.group
+URL:           https://itmxvlpforprxd01.it.cobra.group:9090
+Host count:    79
+Features:      
+ 1) Name: Container_Gateway
+ 2) Name: Templates
+ 3) Name: Logs
+ 4) Name: Registration
+ 5) Name: ACD
+ 6) Name: Script
+ 7) Name: Ansible
+ 8) Name: Discovery
+ 9) Name: Openscap
+ 10)Name: DNS
+ 11)Name: BMC
+ 12)Name: TFTP
+ 13)Name: Shellhooks
+ 14)Name: HTTPBoot
+ 15)Name: Dynflow
+ 16)Name: Puppet CA
+ 17)Name: Puppet
+ 18)Name: Pulpcore
+Locations:     
+    MXP
+Organizations: 
+    Vodafone Automotive
+Created at:    2023/06/20 16:11:17
+Updated at:    2025/11/12 15:05:10
+
+--- itmxvlpforprxi01.vfintgr.local ---
+Id:            3
+Name:          itmxvlpforprxi01.vfintgr.local
+URL:           https://itmxvlpforprxi01.vfintgr.local:9090
+Host count:    136
+Features:      
+ 1) Name: Container_Gateway
+ 2) Name: Templates
+ 3) Name: Logs
+ 4) Name: Registration
+ 5) Name: Pulpcore
+ 6) Name: ACD
+ 7) Name: Script
+ 8) Name: Ansible
+ 9) Name: Discovery
+ 10)Name: Openscap
+ 11)Name: DNS
+ 12)Name: BMC
+ 13)Name: Shellhooks
+ 14)Name: HTTPBoot
+ 15)Name: Dynflow
+ 16)Name: TFTP
+ 17)Name: Puppet CA
+ 18)Name: Puppet
+Locations:     
+    MXP
+    PSP
+Organizations: 
+    Vodafone Automotive
+Created at:    2023/08/30 10:05:00
+Updated at:    2025/11/12 15:07:47
+
+--- itmxvlpforprxt01.it.cobra.group ---
+Id:            4
+Name:          itmxvlpforprxt01.it.cobra.group
+URL:           https://itmxvlpforprxt01.it.cobra.group:9090
+Host count:    118
+Features:      
+ 1) Name: Shellhooks
+ 2) Name: Container_Gateway
+ 3) Name: Templates
+ 4) Name: Logs
+ 5) Name: Registration
+ 6) Name: ACD
+ 7) Name: Script
+ 8) Name: Ansible
+ 9) Name: Discovery
+ 10)Name: Openscap
+ 11)Name: DNS
+ 12)Name: BMC
+ 13)Name: Puppet CA
+ 14)Name: Puppet
+ 15)Name: Dynflow
+ 16)Name: HTTPBoot
+ 17)Name: TFTP
+ 18)Name: Pulpcore
+Locations:     
+    MXP
+Organizations: 
+    Vodafone Automotive
+Created at:    2023/08/30 16:40:26
+Updated at:    2025/11/12 15:03:52
+
+--- itmxvlpforprxo01.it.cobra.group ---
+Id:            5
+Name:          itmxvlpforprxo01.it.cobra.group
+URL:           https://itmxvlpforprxo01.it.cobra.group:9090
+Host count:    137
+Features:      
+ 1) Name: Container_Gateway
+ 2) Name: Templates
+ 3) Name: Logs
+ 4) Name: Registration
+ 5) Name: Pulpcore
+ 6) Name: Dynflow
+ 7) Name: ACD
+ 8) Name: Ansible
+ 9) Name: Discovery
+ 10)Name: Openscap
+ 11)Name: Shellhooks
+ 12)Name: DNS
+ 13)Name: BMC
+ 14)Name: HTTPBoot
+ 15)Name: Script
+ 16)Name: TFTP
+ 17)Name: Puppet
+ 18)Name: Puppet CA
+Locations:     
+    MXP
+Organizations: 
+    Vodafone Automotive
+Created at:    2023/09/21 15:09:31
+Updated at:    2025/11/12 15:06:29
+
+--- itva01vlpfpxsmgt01.intra.cobra.it ---
+Id:            7
+Name:          itva01vlpfpxsmgt01.intra.cobra.it
+URL:           https://itva01vlpfpxsmgt01.intra.cobra.it:9090
+Host count:    75
+Features:      
+ 1) Name: TFTP
+ 2) Name: Container_Gateway
+ 3) Name: Templates
+ 4) Name: Logs
+ 5) Name: Registration
+ 6) Name: Pulpcore
+ 7) Name: Dynflow
+ 8) Name: ACD
+ 9) Name: Script
+ 10)Name: Ansible
+ 11)Name: Openscap
+ 12)Name: Shellhooks
+ 13)Name: DNS
+ 14)Name: BMC
+ 15)Name: HTTPBoot
+ 16)Name: Discovery
+ 17)Name: Puppet CA
+ 18)Name: Puppet
+Locations:     
+    MXP
+    VA
+Organizations: 
+    Vodafone Automotive
+Created at:    2023/11/13 10:32:24
+Updated at:    2025/11/10 22:13:16
+
+--- itva01vlpfpxptwh01.intra.cobra.it ---
+Id:            9
+Name:          itva01vlpfpxptwh01.intra.cobra.it
+URL:           https://itva01vlpfpxptwh01.intra.cobra.it:9090
+Host count:    35
+Features:      
+ 1) Name: TFTP
+ 2) Name: Container_Gateway
+ 3) Name: Templates
+ 4) Name: Logs
+ 5) Name: Registration
+ 6) Name: Pulpcore
+ 7) Name: Dynflow
+ 8) Name: ACD
+ 9) Name: Script
+ 10)Name: Ansible
+ 11)Name: Discovery
+ 12)Name: Openscap
+ 13)Name: Shellhooks
+ 14)Name: DNS
+ 15)Name: BMC
+ 16)Name: Puppet CA
+ 17)Name: Puppet
+ 18)Name: HTTPBoot
+Locations:     
+    MXP
+    VA
+Organizations: 
+    Vodafone Automotive
+Created at:    2023/11/13 14:30:54
+Updated at:    2025/11/10 22:15:52
+
+--- itpsvlpforprx01.vfadc.local ---
+Id:            10
+Name:          itpsvlpforprx01.vfadc.local
+URL:           https://itpsvlpforprx01.vfadc.local:9090
+Host count:    171
+Features:      
+ 1) Name: Container_Gateway
+ 2) Name: Templates
+ 3) Name: Logs
+ 4) Name: Registration
+ 5) Name: Dynflow
+ 6) Name: ACD
+ 7) Name: Script
+ 8) Name: Ansible
+ 9) Name: Discovery
+ 10)Name: Openscap
+ 11)Name: Shellhooks
+ 12)Name: DNS
+ 13)Name: BMC
+ 14)Name: Puppet CA
+ 15)Name: Puppet
+ 16)Name: HTTPBoot
+ 17)Name: Pulpcore
+ 18)Name: TFTP
+Locations:     
+    CST
+    MXP
+    PSP
+Organizations: 
+    Vodafone Automotive
+Created at:    2023/11/13 16:50:33
+Updated at:    2025/11/10 23:42:38
+
+--- itva01vlpfpxbrwn01.vfabrown.local ---
+Id:            11
+Name:          itva01vlpfpxbrwn01.vfabrown.local
+URL:           https://itva01vlpfpxbrwn01.vfabrown.local:9090
+Host count:    17
+Features:      
+ 1) Name: Container_Gateway
+ 2) Name: Templates
+ 3) Name: Logs
+ 4) Name: Registration
+ 5) Name: ACD
+ 6) Name: Discovery
+ 7) Name: Openscap
+ 8) Name: Script
+ 9) Name: Shellhooks
+ 10)Name: DNS
+ 11)Name: Puppet CA
+ 12)Name: Puppet
+ 13)Name: BMC
+ 14)Name: HTTPBoot
+ 15)Name: Dynflow
+ 16)Name: Ansible
+ 17)Name: TFTP
+ 18)Name: Pulpcore
+Locations:     
+    MXP
+    VA
+Organizations: 
+    Vodafone Automotive
+Created at:    2023/11/13 17:39:18
+Updated at:    2025/08/08 15:20:23
+
+--- itva01vlpfpxprdm01.intra.cobra.it ---
+Id:            12
+Name:          itva01vlpfpxprdm01.intra.cobra.it
+URL:           https://itva01vlpfpxprdm01.intra.cobra.it:9090
+Host count:    66
+Features:      
+ 1) Name: Container_Gateway
+ 2) Name: Templates
+ 3) Name: Logs
+ 4) Name: Registration
+ 5) Name: Dynflow
+ 6) Name: ACD
+ 7) Name: Script
+ 8) Name: Ansible
+ 9) Name: Discovery
+ 10)Name: Openscap
+ 11)Name: Shellhooks
+ 12)Name: DNS
+ 13)Name: Puppet CA
+ 14)Name: Puppet
+ 15)Name: BMC
+ 16)Name: HTTPBoot
+ 17)Name: Pulpcore
+ 18)Name: TFTP
+Locations:     
+    MXP
+    VA
+Organizations: 
+    Vodafone Automotive
+Created at:    2023/11/13 17:39:21
+Updated at:    2025/11/10 22:17:12
+
+--- itva01vlpfpxdte01.intra.cobra.it ---
+Id:            13
+Name:          itva01vlpfpxdte01.intra.cobra.it
+URL:           https://itva01vlpfpxdte01.intra.cobra.it:9090
+Host count:    18
+Features:      
+ 1) Name: TFTP
+ 2) Name: Container_Gateway
+ 3) Name: Dynflow
+ 4) Name: ACD
+ 5) Name: Script
+ 6) Name: Discovery
+ 7) Name: Openscap
+ 8) Name: Shellhooks
+ 9) Name: Ansible
+ 10)Name: DNS
+ 11)Name: Templates
+ 12)Name: Puppet
+ 13)Name: BMC
+ 14)Name: Logs
+ 15)Name: HTTPBoot
+ 16)Name: Registration
+ 17)Name: Puppet CA
+ 18)Name: Pulpcore
+Locations:     
+    MXP
+    VA
+Organizations: 
+    Vodafone Automotive
+Created at:    2023/11/13 17:43:18
+Updated at:    2025/11/10 22:33:12
+
+--- itmxvlpforprxp02.it.cobra.group ---
+Id:            14
+Name:          itmxvlpforprxp02.it.cobra.group
+URL:           https://itmxvlpforprxp02.it.cobra.group:9090
+Host count:    86
+Features:      
+ 1) Name: Container_Gateway
+ 2) Name: Templates
+ 3) Name: Logs
+ 4) Name: Registration
+ 5) Name: TFTP
+ 6) Name: Dynflow
+ 7) Name: ACD
+ 8) Name: Script
+ 9) Name: Ansible
+ 10)Name: Discovery
+ 11)Name: Openscap
+ 12)Name: Shellhooks
+ 13)Name: DNS
+ 14)Name: Puppet CA
+ 15)Name: Puppet
+ 16)Name: BMC
+ 17)Name: HTTPBoot
+ 18)Name: Pulpcore
+Locations:     
+    MXP
+Organizations: 
+    Vodafone Automotive
+Created at:    2024/03/18 16:46:12
+Updated at:    2025/11/12 02:30:31
+
+--- esmadvlpforprx01.it.cobra.group ---
+Id:            15
+Name:          esmadvlpforprx01.it.cobra.group
+URL:           https://esmadvlpforprx01.it.cobra.group:9090
+Host count:    1
+Features:      
+ 1) Name: Pulpcore
+ 2) Name: Templates
+ 3) Name: Logs
+ 4) Name: Registration
+Locations:     
+    ES
+Organizations: 
+    Vodafone Automotive
+Created at:    2025/11/05 16:05:01
+Updated at:    2025/11/10 23:40:48
+

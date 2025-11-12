@@ -1,0 +1,23 @@
+[/srv/foreman-audit/GATES/P1_AS_IS] Gate P1 — Verifica evidenze
+--------------------------------------------------------------------------------
+PUPPET:
+  present.............: true
+  master_fqdn.........: false
+  environmentpath.....: |
+  envs_detected.......: MXP_PRD MXP_TEST MXP_DEV MXP_PIE MXP_OFFICE production VA_SVCS_MGMT VA_DEV_TEST VA_DMZ_PROD VA_PLANT_WH VA_BROWN PSP_PRD common -------------
+  reports_ok..........: -------------
+  ASSERTION...........: puppet_active_and_reporting = FAIL
+--------------------------------------------------------------------------------
+REX / ANSIBLE:
+  mode................: HYBRID
+  inventory_source....: STATIC
+  mxp_job_ok..........: false
+  va_job_ok...........: false
+  ASSERTION...........: rex_multi_site_exec_ok = FAIL
+--------------------------------------------------------------------------------
+WINDOWS PATCHING:
+  engine..............: WSUS
+  orchestrated_by.....: |
+  evidence_present....: SCCM | Chocolatey | winget | Other (specificare) Foreman REX | Ansible | GPO | SCCM | Other false
+  ASSERTION...........: windows_engine_proven = FAIL
+--------------------------------------------------------------------------------
