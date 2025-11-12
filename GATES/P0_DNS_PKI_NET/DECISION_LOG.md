@@ -15,6 +15,14 @@
   Reviewer Notes (GPT-5): OK
   Reviewer Notes (Gemini): OK
 
+- ID: A-P0-WAIVER-DNS
+  When: <oggi, ISO-8601>
+  What: Introduzione WAIVER P0-DNS-001 per consentire prosecuzione audit
+  Reason: CR DNS con tempi lunghi; override locale è stabile e confinato
+  Mitigations: monitor_dns_drift, smoke-test ricorrenti
+  Status: Proposed → (da marcare Approved dopo doppia review)
+
+
 ## Final Decision
 - Director: <APPROVED | REWORK>
 - Rationale: <motivazione sintetica>

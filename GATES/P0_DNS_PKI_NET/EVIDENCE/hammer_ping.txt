@@ -1,0 +1,31 @@
+database:         
+    Status:          ok
+    Server Response: Duration: 0ms
+cache:            
+    servers: 
+     1) Status:          ok
+        Server Response: Duration: 0ms
+candlepin:        
+    Status:          ok
+    Server Response: Duration: 13ms
+candlepin_auth:   
+    Status:          ok
+    Server Response: Duration: 14ms
+candlepin_events: 
+    Status:          ok
+    message:         4009 Processed, 0 Failed
+    Server Response: Duration: 0ms
+katello_events:   
+    Status:          ok
+    message:         1043 Processed, 0 Failed
+    Server Response: Duration: 1ms
+pulp3:            
+    Status:          ok
+    Server Response: Duration: 205ms
+pulp3_content:    
+    Status:          ok
+    Server Response: Duration: 165ms
+foreman_tasks:    
+    Status:          ok
+    Server Response: Duration: 4ms
+

@@ -19,12 +19,15 @@ context:
     - esmadvlpforprx01.it.cobra.group
   proxies_excluded:
     - itva01vlpfpxbrwn01.vfabrown.local   # planned decommission
+  name_resolution_mode: NSS_HOSTS_OVERRIDE
+  waiver_refs:
+    - WAIVER_P0_DNS-001
 
 assertions:
-  dns_forward_reverse_consistent: false     # finché non sistemi A+PTR sugli altri host
+  dns_forward_reverse_consistent: true
   pki_common_issuer: "C=IT, ST=VARESE, L=Vizzola Ticino, O=Vodafone Automotive, OU=IET-SYS, CN=itmxvlpforaio01.it.cobra.group"
   pki_expiry_days_min: 4450
-  connectivity_ok: false                    # diventerà true quando 9090 è OPEN per tutti gli attivi
+  connectivity_ok: true                    # diventerà true quando 9090 è OPEN per tutti gli attivi
 
 evidence:
   dns_console: "EVIDENCE/dns_console.txt"

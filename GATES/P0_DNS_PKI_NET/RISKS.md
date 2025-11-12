@@ -4,19 +4,6 @@
 *(none logged yet — add using the template below)*
 
 ## Risk Entry Template
-```yaml
-- id: R-P0-XXX
-  title: <short name>
-  desc: <what could go wrong / assumption to validate>
-  cause: <underlying condition>
-  impact: <operational effect if realized>
-  likelihood: Low|Medium|High
-  severity: Low|Medium|High|Critical
-  mitigation: <specific steps / commands / owners>
-  owner: <role or person>
-  status: Open|Mitigated|Closed|Accepted
-  evidence: [ "EVIDENCE/<file1>", "EVIDENCE/<file2>" ]
-```
 - id: R-P0-DCOMM-BROWN
   title: Decommission proxy vfabrown
   desc: Proxy itva01vlpfpxbrwn01.vfabrown.local irraggiungibile e da dismettere
@@ -28,6 +15,17 @@
   owner: Infra
   status: Open
   evidence: ["EVIDENCE/reach_f2p.txt","EVIDENCE/dns_proxies.txt"]
+- id: R-P0-DNS-OVERRIDE
+  title: DNS autoritativo non allineato (override NSS locale)
+  desc: Console usa /etc/hosts; dig/host non riflettono lo stato autoritativo.
+  status: Accepted (time-boxed)
+  waiver_ref: WAIVER_P0_DNS-001
+  until: 2025-12-31
+  mitigation:
+    - monitor_dns_drift.sh giornaliero con alert su mismatch
+    - smoke-test periodici (hammer ping; features 9090)
+  owner: Infra
+  evidence: ["EVIDENCE/hosts_override.txt","REPORT_dns_nss_summary.txt","EVIDENCE/dns_drift.tsv"]
 
 
 ## Notes

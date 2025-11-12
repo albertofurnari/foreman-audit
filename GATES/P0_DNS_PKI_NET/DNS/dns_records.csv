@@ -1,0 +1,13 @@
+fqdn,ip,forward_zone,reverse_zone,ptr_host
+itmxvlpforaio01.it.cobra.group,192.168.8.130,it.cobra.group,8.168.192.in-addr.arpa,130
+itmxvlpforprxd01.it.cobra.group,192.168.8.132,it.cobra.group,8.168.192.in-addr.arpa,132
+itmxvlpforprxi01.vfintgr.local,10.88.88.220,vfintgr.local,88.88.10.in-addr.arpa,220
+itmxvlpforprxt01.it.cobra.group,192.168.8.133,it.cobra.group,8.168.192.in-addr.arpa,133
+itmxvlpforprxo01.it.cobra.group,192.168.8.135,it.cobra.group,8.168.192.in-addr.arpa,135
+itva01vlpfpxsmgt01.intra.cobra.it,10.50.2.100,intra.cobra.it,2.50.10.in-addr.arpa,100
+itva01vlpfpxptwh01.intra.cobra.it,10.99.103.201,intra.cobra.it,103.99.10.in-addr.arpa,201
+itpsvlpforprx01.vfadc.local,10.171.12.31,vfadc.local,12.171.10.in-addr.arpa,31
+itva01vlpfpxprdm01.intra.cobra.it,10.101.0.150,intra.cobra.it,0.101.10.in-addr.arpa,150
+itva01vlpfpxdte01.intra.cobra.it,10.100.0.100,intra.cobra.it,0.100.10.in-addr.arpa,100
+itmxvlpforprxp02.it.cobra.group,192.168.8.134,it.cobra.group,8.168.192.in-addr.arpa,134
+esmadvlpforprx01.it.cobra.group,192.168.24.42,it.cobra.group,24.168.192.in-addr.arpa,42

@@ -1,0 +1,26 @@
+{ "host": "itmxvlpforaio01.it.cobra.group", "features": 
+["acd","ansible","bmc","container_gateway","discovery","dns","dynflow","facts","httpboot","logs","monitoring","openscap","pulpcore","puppet","puppetca","registration","script","shellhooks","templates","tftp"]}
+{ "host": "itmxvlpforprxd01.it.cobra.group", "features": 
+["acd","ansible","bmc","container_gateway","discovery","dns","dynflow","httpboot","logs","openscap","pulpcore","puppet","puppetca","registration","script","shellhooks","templates","tftp"]}
+{ "host": "itmxvlpforprxi01.vfintgr.local", "features": 
+["acd","ansible","bmc","container_gateway","discovery","dns","dynflow","httpboot","logs","openscap","pulpcore","puppet","puppetca","registration","script","shellhooks","templates","tftp"]}
+{ "host": "itmxvlpforprxt01.it.cobra.group", "features": 
+["acd","ansible","bmc","container_gateway","discovery","dns","dynflow","httpboot","logs","openscap","pulpcore","puppet","puppetca","registration","script","shellhooks","templates","tftp"]}
+{ "host": "itmxvlpforprxo01.it.cobra.group", "features": 
+["acd","ansible","bmc","container_gateway","discovery","dns","dynflow","httpboot","logs","openscap","pulpcore","puppet","puppetca","registration","script","shellhooks","templates","tftp"]}
+{ "host": "itva01vlpfpxsmgt01.intra.cobra.it", "features": 
+["acd","ansible","bmc","container_gateway","discovery","dns","dynflow","httpboot","logs","openscap","pulpcore","puppet","puppetca","registration","script","shellhooks","templates","tftp"]}
+{ "host": "itva01vlpfpxptwh01.intra.cobra.it", "features": 
+["acd","ansible","bmc","container_gateway","discovery","dns","dynflow","httpboot","logs","openscap","pulpcore","puppet","puppetca","registration","script","shellhooks","templates","tftp"]}
+{ "host": "itpsvlpforprx01.vfadc.local", "features": 
+["acd","ansible","bmc","container_gateway","discovery","dns","dynflow","httpboot","logs","openscap","pulpcore","puppet","puppetca","registration","script","shellhooks","templates","tftp"]}
+{ "host": "itva01vlpfpxbrwn01.vfabrown.local", "features": 
+}
+{ "host": "itva01vlpfpxprdm01.intra.cobra.it", "features": 
+["acd","ansible","bmc","container_gateway","discovery","dns","dynflow","httpboot","logs","openscap","pulpcore","puppet","puppetca","registration","script","shellhooks","templates","tftp"]}
+{ "host": "itva01vlpfpxdte01.intra.cobra.it", "features": 
+["acd","ansible","bmc","container_gateway","discovery","dns","dynflow","httpboot","logs","openscap","pulpcore","puppet","puppetca","registration","script","shellhooks","templates","tftp"]}
+{ "host": "itmxvlpforprxp02.it.cobra.group", "features": 
+["acd","ansible","bmc","container_gateway","discovery","dns","dynflow","httpboot","logs","openscap","pulpcore","puppet","puppetca","registration","script","shellhooks","templates","tftp"]}
+{ "host": "esmadvlpforprx01.it.cobra.group", "features": 
+["logs","pulpcore","registration","templates"]}
